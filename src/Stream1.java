@@ -32,7 +32,7 @@ public class Stream1 {
                                 c -> c.model, c -> c.engineCapacity
                         )
                 )
-        )
+        );
 
         Stream<Integer> integerStream = Stream.of(10, 3, 4, 21, 56);
         Stream<Integer> filteredIntegerStream = integerStream.filter(i -> {
