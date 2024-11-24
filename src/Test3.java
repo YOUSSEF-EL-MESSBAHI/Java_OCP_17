@@ -6,5 +6,9 @@ public class Test3 {
         StringBuilder sb = new StringBuilder("INHALE ");
         String s = sb.toString() + (sb.append("INHALE "));
         System.out.println(s.strip().length());
+        Integer a = 3;
+        Integer b = 3;
+        System.out.println(a == b);       // true (cached value)
+        System.out.println(a.equals(b)); // true (value comparison)
     }
 }
