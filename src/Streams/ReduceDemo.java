@@ -29,5 +29,23 @@ public class ReduceDemo {
         Integer maxvalue = numbers.stream().reduce(0, (a, b) -> a > b ? a : b);
         System.out.println(maxvalue);
 
+
+        //get employee whose grade A
+        //get salary
+        double avgSalary = EmployeeDataBase.getAllEmployees().stream()
+                .filter(employee -> employee.getDept().equalsIgnoreCase("Development"))
+                .map(employee -> employee.getSalary())
+                .mapToDouble(i -> i)
+                .average().getAsDouble();
+
+        System.out.println(avgSalary);
+
+        double sumSalary = EmployeeDataBase.getAllEmployees().stream()
+                .filter(employee -> employee.getDept().equalsIgnoreCase("Development"))
+                .map(employee -> employee.getSalary())
+                .mapToDouble(i -> i)
+                .sum();
+        System.out.println(sumSalary);
+
     }
 }
