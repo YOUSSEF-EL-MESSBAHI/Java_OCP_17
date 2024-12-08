@@ -47,5 +47,70 @@ public class ReduceDemo {
                 .sum();
         System.out.println(sumSalary);
 
+
+        List<Integer> numberss = Arrays.asList(1, 2, 3, 4, 5);
+        int sum = numberss.stream()
+                .reduce(0, (partialSum, num) -> partialSum + num, Integer::sum);
+        System.out.println(sum);
+
+        List<String> wordss = Arrays.asList("Java", "is", "fun","hhhhh");
+        String sentence = wordss.stream()
+                .reduce("", (partial, word) -> partial + word + " ", String::concat);
+        System.out.println(sentence.trim());
+
+        String result = wordss.stream().parallel()
+                .reduce(
+                        "",
+                        (partial, word) -> {
+                            System.out.println("Accumulator: partial = \"" + partial + "\", word = \"" + word + "\"");
+                            return partial + word + " ";
+                        },
+                        (partial1, partial2) -> {
+                            System.out.println("Combiner: partial1 = \"" + partial1 + "\", partial2 = \"" + partial2.toUpperCase() + "\"");
+                            return partial1 + partial2.toUpperCase();
+                        }
+                );
+
+        System.out.println("Final Result: " + result);
+
+//        System.out.println(result.trim());
+
+
+        List<String> words1 = Arrays.asList("hello", "world","hi","youssef");
+
+        String result1 = words1.parallelStream()
+                .reduce(
+                        "",
+                        (partial, word) -> {
+                            System.out.println(partial + " acumulator " + word);
+                            return partial + word;
+                        }, // Accumulator
+                        (partial1, partial2) -> {
+                            System.out.println("combiner " + partial1 + " and " + partial2);
+                            return partial1.toUpperCase() + partial2.toLowerCase();
+                        } // Combiner
+                );
+
+        System.out.println(result1);
+
+
+        List<Integer> numbers2 = Arrays.asList(1, 2, 3, 4, 5, 6);
+
+        int result2 = numbers.parallelStream()
+                .reduce(
+                        0, // Identity
+                        (partialSum, num) -> { // Accumulator
+                            System.out.println("Accumulator: partialSum = " + partialSum + ", num = " + num);
+                            return partialSum + num;
+                        },
+                        (sum1, sum2) -> { // Combiner
+                            System.out.println("Combiner: sum1 = " + sum1 + ", sum2 = " + sum2);
+                            return sum1 + sum2;
+                        }
+                );
+
+        System.out.println("Final Result: " + result2);
+
+
     }
 }
