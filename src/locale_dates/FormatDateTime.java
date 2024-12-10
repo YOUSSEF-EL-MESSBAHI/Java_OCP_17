@@ -2,10 +2,7 @@ package locale_dates;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
@@ -59,5 +56,9 @@ public class FormatDateTime {
         //In java 7
         DateFormat s = new SimpleDateFormat("MMMM dd, yyyy 'at' hh:mm");
         System.out.println(s.format(new Date()));
+
+        Period p = Period.ofYears(1).ofDays(1);
+        System.out.println(p.getYears());
+        System.out.println(p.getDays());
     }
 }
