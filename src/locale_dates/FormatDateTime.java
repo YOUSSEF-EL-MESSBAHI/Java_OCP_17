@@ -50,8 +50,8 @@ public class FormatDateTime {
         var g3 = DateTimeFormatter.ofPattern("'New!' yyyy ',yay!!'");
         System.out.println(dt.format(g3));
 
-//        DateTimeFormatter.ofPattern("Time is: hh:mm:ss");
-//        DateTimeFormatter.ofPattern("'Time is: hh:mm:ss");
+        DateTimeFormatter.ofPattern("Time is: hh:mm:ss");
+        DateTimeFormatter.ofPattern("'Time is: hh:mm:ss");
 
         //In java 7
         DateFormat s = new SimpleDateFormat("MMMM dd, yyyy 'at' hh:mm");
