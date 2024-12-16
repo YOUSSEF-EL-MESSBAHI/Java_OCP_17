@@ -10,7 +10,7 @@ public class DataType {
         int s= 0b10;
         System.out.println(s);
         short x=0xff;
-        System.out.println(x);
+//        System.out.println(x);
 
     }
 }
