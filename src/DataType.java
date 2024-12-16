@@ -8,7 +8,7 @@ public class DataType {
         long d = a;
         float f = 3.14f;
         int s= 0b10;
-        System.out.println(s);
+//        System.out.println(s);
         short x=0xff;
 //        System.out.println(x);
 
