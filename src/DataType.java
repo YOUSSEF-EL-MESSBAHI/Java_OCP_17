@@ -19,6 +19,6 @@ public class DataType {
         ++b;
         float d= 1.6f;
         int f = (int) d;
-        System.out.println(f);
+//        System.out.println(f);
     }
 }
