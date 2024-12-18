@@ -20,5 +20,8 @@ public class DataType {
         float d= 1.6f;
         int f = (int) d;
 //        System.out.println(f);
+
+        // custum exception that extend exception are checked exception
+        // custum exception that extend runtime exception are unchecked exception
     }
 }
