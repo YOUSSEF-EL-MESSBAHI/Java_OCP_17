@@ -99,7 +99,7 @@ public class JavaStreamCheatSheet {
         Employee findFirstElement = employees.stream()
                 .filter(e -> e.getDept().equals("Development"))
                 .findFirst()
-                .orElseThrow(()->new IllegalArgumentException("Employee not found "));
+                .orElseThrow(() -> new IllegalArgumentException("Employee not found "));
 
 //        System.out.println(findFirstElement.get());//NPE
 //
@@ -116,7 +116,7 @@ public class JavaStreamCheatSheet {
         Employee findAnyElement = employees.stream()
                 .filter(e -> e.getDept().equals("Development"))
                 .findAny()
-                .orElseThrow(()->new IllegalArgumentException("Employee not found "));
+                .orElseThrow(() -> new IllegalArgumentException("Employee not found "));
 
         // System.out.println(findAnyElement);
 
@@ -128,7 +128,7 @@ public class JavaStreamCheatSheet {
 
 
         boolean developmentEmpAllMatch = employees.stream()
-                .allMatch(e -> e.getSalary()>50000);//55000
+                .allMatch(e -> e.getSalary() > 50000);//55000
         //System.out.println(developmentEmpAllMatch); //false
 
 
@@ -143,7 +143,7 @@ public class JavaStreamCheatSheet {
                 .limit(4)
                 .collect(Collectors.toList());
 
-        topPaidEmployees.forEach(e-> System.out.println(e.getName()));
+        topPaidEmployees.forEach(e -> System.out.println(e.getName()));
 
         //skip(long)
         List<Employee> skipEmployees = employees.stream().skip(10)
@@ -167,6 +167,24 @@ public class JavaStreamCheatSheet {
 //        noneMatch(Predicate)
 //        limit(long maxSize)
 //        skip(long n)
+
+        // Stream hidden Features
+//👉 1. Stream.ofNullable
+//👉 2. Stream.iterate()
+//👉 3. Collectors.collectingAndThen
+//👉 4. Stream.takeWhile and Stream.dropWhile
+//👉 5. Collectors.teeing()
+//👉 6. Stream.concat()
+//👉 7. Collectors.partitioningBy
+//👉 8. IntStream for Ranges
+
+
+        // Collection hidden features
+//👉1. Collections.nCopies()
+//👉2. Collections.frequency()
+//👉3. Collections.disjoint()
+//👉4. Collections.singleton()
+//👉5. Collections.rotate()
 
     }
 }
