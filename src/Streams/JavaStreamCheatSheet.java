@@ -169,14 +169,14 @@ public class JavaStreamCheatSheet {
 //        skip(long n)
 
         // Stream hidden Features
-👉 1. Stream.ofNullable
-👉 2. Stream.iterate()
-👉 3. Collectors.collectingAndThen
-👉 4. Stream.takeWhile and Stream.dropWhile
-👉 5. Collectors.teeing()
-👉 6. Stream.concat()
-👉 7. Collectors.partitioningBy
-👉 8. IntStream for Ranges
+//👉 1. Stream.ofNullable
+//👉 2. Stream.iterate()
+//👉 3. Collectors.collectingAndThen
+//👉 4. Stream.takeWhile and Stream.dropWhile
+//👉 5. Collectors.teeing()
+//👉 6. Stream.concat()
+//👉 7. Collectors.partitioningBy
+//👉 8. IntStream for Ranges
 
 
         // Collection hidden features
