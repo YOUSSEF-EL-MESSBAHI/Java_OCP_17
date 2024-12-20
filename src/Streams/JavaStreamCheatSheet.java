@@ -180,11 +180,11 @@ public class JavaStreamCheatSheet {
 
 
         // Collection hidden features
-//👉1. Collections.nCopies()
-//👉2. Collections.frequency()
-//👉3. Collections.disjoint()
-//👉4. Collections.singleton()
-//👉5. Collections.rotate()
+👉1. Collections.nCopies()
+👉2. Collections.frequency()
+👉3. Collections.disjoint()
+👉4. Collections.singleton()
+👉5. Collections.rotate()
 
     }
 }
