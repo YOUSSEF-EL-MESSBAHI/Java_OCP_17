@@ -169,22 +169,22 @@ public class JavaStreamCheatSheet {
 //        skip(long n)
 
         // Stream hidden Features
-//👉 1. Stream.ofNullable
-//👉 2. Stream.iterate()
-//👉 3. Collectors.collectingAndThen
-//👉 4. Stream.takeWhile and Stream.dropWhile
-//👉 5. Collectors.teeing()
-//👉 6. Stream.concat()
-//👉 7. Collectors.partitioningBy
-//👉 8. IntStream for Ranges
+👉 1. Stream.ofNullable
+👉 2. Stream.iterate()
+👉 3. Collectors.collectingAndThen
+👉 4. Stream.takeWhile and Stream.dropWhile
+👉 5. Collectors.teeing()
+👉 6. Stream.concat()
+👉 7. Collectors.partitioningBy
+👉 8. IntStream for Ranges
 
 
         // Collection hidden features
-👉1. Collections.nCopies()
-👉2. Collections.frequency()
-👉3. Collections.disjoint()
-👉4. Collections.singleton()
-👉5. Collections.rotate()
+//👉1. Collections.nCopies()
+//👉2. Collections.frequency()
+//👉3. Collections.disjoint()
+//👉4. Collections.singleton()
+//👉5. Collections.rotate()
 
     }
 }
