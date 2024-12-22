@@ -1,4 +1,4 @@
-package Streams;
+package Streams.Advanced;
 
 import java.util.Set;
 import java.util.TreeSet;
