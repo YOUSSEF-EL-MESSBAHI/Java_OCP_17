@@ -20,6 +20,10 @@ public class Partitioning {
                 .collect(Collectors.partitioningBy(s -> s.length() <= 7, Collectors.toSet()));
         System.out.println(map1);
 
+        Map<Boolean, Long> map2 = Stream.of("lions", "tigers", "bearsssss")
+                .collect(Collectors.partitioningBy(s -> s.length() <= 7, Collectors.counting()));
+        System.out.println(map2);
+
         Map<Integer, Long> map3 = Stream.of("lions", "tigers", "bears")
                 .collect(Collectors.groupingBy(String::length, Collectors.counting()));
         System.out.println(map3);
