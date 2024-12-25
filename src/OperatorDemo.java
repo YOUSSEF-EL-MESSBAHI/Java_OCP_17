@@ -39,8 +39,12 @@ public class OperatorDemo {
         int w = h & t; // Binary: 0001 -> Decimal: 1
         System.out.println(w); // Output: 1
 
+        int s = 5;
 
+        int res = ++s + s++ + ++s;
 
+        System.out.println("Final value of s: " + s);
+        System.out.println("Result: " + res);
 
     }
 }
