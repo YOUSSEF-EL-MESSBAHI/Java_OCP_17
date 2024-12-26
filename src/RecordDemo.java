@@ -55,6 +55,12 @@ public class RecordDemo {
         {
             return ++empToken;
         }
+
+        class DistanceCalculator {
+            void calculateDistance(Employe other) {
+                // ...
+            }
+        }
     }
 }
 
