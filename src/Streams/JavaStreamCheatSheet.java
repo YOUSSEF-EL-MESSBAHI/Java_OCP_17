@@ -150,6 +150,21 @@ public class JavaStreamCheatSheet {
                 .collect(Collectors.toList());
 
 
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+// Sequential Stream
+        numbers.stream()
+                .forEachOrdered(System.out::print); // Prints 1, 2, 3, 4, 5
+
+// Parallel Stream without Order Guarantee
+        numbers.parallelStream()
+                .forEach(System.out::print); // Might print in any order
+
+// Parallel Stream with Order Guarantee
+        numbers.parallelStream()
+                .forEachOrdered(System.out::print); // Prints 1, 2, 3, 4, 5
+
+
 //
 //        forEach(Consumer)
 //        filter(Predicate)
