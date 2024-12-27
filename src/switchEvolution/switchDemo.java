@@ -120,14 +120,14 @@ public class switchDemo {
         };
     }
 
-    public String switchCasejava14(Object obj){
-        return switch (obj) {
-            case Integer i -> "It is an integer";
-            case String s -> "It is a string";
+//    public String switchCasejava14(Object obj){
+//        return switch (obj) {
+//            case Integer i -> "It is an integer";
+//            case String s -> "It is a string";
 //            case Employee s -> "It is a Employee";
-            default -> "It is none of the known data types";
-        };
-    }
+//            default -> "It is none of the known data types";
+//        };
+//    }
 
 //    public String switchCasejava15(Object obj){
 //        return switch (obj) {
