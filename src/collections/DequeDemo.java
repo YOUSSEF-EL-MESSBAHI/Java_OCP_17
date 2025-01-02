@@ -1,6 +1,8 @@
 package collections;
 
 import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class DequeDemo {
     public static void main(String[] args) {
@@ -12,8 +14,8 @@ public class DequeDemo {
         deque.push(5);
 
         System.out.println(deque);
-        System.out.println(deque.peek());
-        System.out.println(deque.peekLast());
+//        System.out.println(deque.peek());
+//        System.out.println(deque.peekLast());
 
         System.out.println(deque.pollFirst()); // poll == pollfirst
         System.out.println(deque.pollLast());
@@ -21,5 +23,14 @@ public class DequeDemo {
         System.out.println(deque.pop());
 
         System.out.println(deque);
+
+        System.out.println("*****************************************************************");
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("One");
+        queue.offer("Two");
+        queue.offer("Three");
+        System.out.println(queue.poll()); // Output: One
+        System.out.println(queue.peek()); // Output: Two
+
     }
 }
