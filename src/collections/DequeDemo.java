@@ -30,6 +30,7 @@ public class DequeDemo {
         queue.offer("Two");
         queue.offer("Three");
         System.out.println(queue.poll()); // Output: One
+        System.out.println(queue);
         System.out.println(queue.peek()); // Output: Two
 
     }

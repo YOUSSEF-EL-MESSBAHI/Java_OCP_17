@@ -3,7 +3,11 @@ package interfaces;
 @FunctionalInterface
 interface Eat{
     void eat(int amountOfFood);
-    //    void test();
+
+    default void test() {
+
+    }
+
     String toString();
     boolean equals(Object object);
     int hashCode();
