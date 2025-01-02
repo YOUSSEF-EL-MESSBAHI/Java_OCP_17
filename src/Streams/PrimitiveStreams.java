@@ -24,6 +24,8 @@ public class PrimitiveStreams {
         boxed.forEach(System.out::println);
         OptionalInt min = intStream.min();
         OptionalInt max = intStream.max();
+        int sum = intStream.sum();
+        OptionalDouble average = intStream.average();
 
     }
 }
