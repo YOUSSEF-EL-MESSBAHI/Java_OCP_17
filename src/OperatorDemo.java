@@ -1,7 +1,7 @@
 public class OperatorDemo {
     public static void main(String[] args) {
         int a=8; //1000
-        int b= a << 2; // 10000 add 2 bit in left
+        int b= a << 2; // 100000 add 2 bit in left   1000 to 100 000
         int c= a >> 2;  // 10 remove 2 bit from left
         System.out.println(b);
         System.out.println(c);

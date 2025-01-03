@@ -31,6 +31,7 @@ public class OperatorDemo1 {
         System.out.println(" a^b= "+binary[e]);
         System.out.println("~a & b|a&~b= "+binary[f]);
         int x= ~a;
+        System.out.println("~a= "+binary[g]);
         System.out.println("~a= "+ x);
 
     }

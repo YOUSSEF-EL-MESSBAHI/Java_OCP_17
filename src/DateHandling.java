@@ -8,6 +8,8 @@ public class DateHandling {
         ZoneId zone = ZoneId.of("America/New_York");
         ZonedDateTime z = ZonedDateTime.of(localDate, localTime, zone);
         Duration duration = Duration.ofHours(3);
+        Period period= Period.ofYears(1).ofDays(1).ofMonths(1).ofWeeks(2);
+        System.out.println(period.getDays());
         ZonedDateTime later = z.plus(duration);
         System.out.println(later.getHour());
         //Daylight Saving Time Basics: In the United States, DST begins on the second Sunday of March. At 2:00 AM, clocks are set forward by one hour to 3:00 AM.
@@ -24,12 +26,14 @@ public class DateHandling {
 
 
         LocalDate localDate1 = LocalDate.of(2017, Month.NOVEMBER, 5);
-        LocalTime localTime1 = LocalTime.of(1, 0);
+        LocalTime localTime1 = LocalTime.of(0, 0);
         ZoneId zone1 = ZoneId.of("America/New_York");
         ZonedDateTime z1 = ZonedDateTime.of(localDate1, localTime1, zone1);
-        for (int i = 0; i < 6; i++)
-            z1.plusHours(1); // we shoud assign it to a new ZonedDateTime
-        System.out.println(z1.getHour());
+        for (int i = 0; i < 6; i++) {
+            ZonedDateTime plusHours = z1.plusHours(1);// we shoud assign it to a new ZonedDateTime
+            System.out.println(plusHours);
+        }
+//        System.out.println(plusHours);
 
         /*
         HH: Represents the hour of the day in a 24-hour format (00 to 23).

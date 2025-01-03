@@ -10,7 +10,8 @@ public static void main(String[] args) {
     one=two;
     String three = one;
     one = null;
-    boolean x = one == two;
+    boolean x = three == two;
+    System.out.println(x);
     System.out.println("Garbage collection finished"+ x);
     System.out.println("one refere to "+one.intern());
 }

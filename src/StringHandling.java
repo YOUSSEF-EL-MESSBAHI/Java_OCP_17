@@ -9,6 +9,8 @@ public class StringHandling {
         str.concat("test");
         StringBuilder stringBuilder = new StringBuilder("Hello World");
         stringBuilder.append("test");
+        System.out.println(str);
+        System.out.println(str.equals(stringBuilder.toString()));
         System.out.println(stringBuilder.toString() +"|"+str);
 
     }

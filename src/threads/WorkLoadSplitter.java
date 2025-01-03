@@ -35,6 +35,7 @@ class WorkLoadSplitDemo {
             ForkJoinPool pool = new ForkJoinPool(Runtime.getRuntime().availableProcessors());
             WorkLoadSplitter splitter = new WorkLoadSplitter(128);
             pool.invoke(splitter);
+
         }catch (Exception e) {
             e.printStackTrace();
         }
