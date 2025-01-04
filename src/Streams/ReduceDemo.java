@@ -80,7 +80,7 @@ public class ReduceDemo {
 
         String result1 = words1.parallelStream()
                 .reduce(
-                        "",
+                        "w",
                         (partial, word) -> {
                             System.out.println(partial + " acumulator " + word);
                             return partial + word;

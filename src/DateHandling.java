@@ -45,6 +45,10 @@ public class DateHandling {
 
          */
 
+        LocalDate date = LocalDate.parse("2024-12-31");
+        date = date.plus(Period.ofMonths(1).plusDays(1));
+        System.out.println(date);
+
 
 
     }
