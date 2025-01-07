@@ -22,7 +22,7 @@ public enum Vehicle {
     }
 
     public static void main(String[] args) {
-//        Vehicle.MOTORCYCLE.wheels = List.of(-2);
+        Vehicle.MOTORCYCLE.wheels = List.of(-2);
         System.out.println(Vehicle.MOTORCYCLE.wheelCount());
     }
 }
