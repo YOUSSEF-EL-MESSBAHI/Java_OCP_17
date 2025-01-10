@@ -1,6 +1,7 @@
 package interfaces;
 
-import java.time.ZonedDateTime;
+import java.util.function.Function;
+import java.util.function.IntFunction;
 
 public class LambdaExample {
     public static void main(String[] args) {
@@ -9,11 +10,16 @@ public class LambdaExample {
         System.out.println("Sum: " + sum); // Output: Sum: 8
 
 //        x is effectively final
-//        (x) -> {
-//            x = x + 1; // Compilation error
-//            return x;
-//        }
-
+        Function<Integer,Integer> integerIntFunction = (x) -> {
+            x = x + 1; // Compilation error
+            return x;
+        };
+        System.out.println(integerIntFunction.apply(5));
+//        (var x, var y) -> x + y;;
+        var x = "hi";
+        x=null;
+        var y =6;
+//        y=null;
     }
 }
 
