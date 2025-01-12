@@ -6,13 +6,18 @@ public class MainTest {
         Day d1 = Day.valueOf("TUESDAY");
 //        d1 = Day.valueOf("tuesday");
 
-        System.out.println(d == d1);
-        System.out.println(d.equals(d1));
-        System.out.println(Day.SUNDAY);
-        System.out.println(d.toString());
+//        System.out.println(d == d1);
+//        System.out.println(d.equals(d1));
+//        System.out.println(Day.SUNDAY);
+//        System.out.println(d.toString());
+
+        Day[] days = Day.values();
+        System.out.println(days[0]);
+        System.out.println(days[1]);
+        System.out.println(days[2]);
 
         for (Day day: Day.values() ) {
-            System.out.println(day.name() + " " + day.ordinal());
+            System.out.println(day.name() + " " + day.ordinal()+" ");
         }
 
         Day d3 = Day.SUNDAY;
