@@ -43,5 +43,12 @@ public class TextBlockExample {
                    \\
                    """;  // the two characters \ LF
         System.out.println(backslash);
+
+        Double d = 9.4;
+        int i = (int) Math.round(d);
+        int j = (int) Math.floor(d);
+        int k = (int) Math.ceil(d);
+
+        System.out.println(k);
     }
 }
