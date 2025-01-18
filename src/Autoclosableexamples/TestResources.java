@@ -35,6 +35,40 @@ public class TestResources {
                 System.out.println("Suppressed: " + suppressed.getMessage());
             }
         }
+
+//        ResourceA a = null;
+//        ResourceB b = null;
+//
+//        try {
+//            a = new ResourceA();
+//            b = new ResourceB();
+//
+//            a.action();
+//            b.action();
+//
+//        } catch (Exception e) {
+//            System.out.println("Caught: " + e.getMessage());
+//            for (Throwable suppressed : e.getSuppressed()) {
+//                System.out.println("Suppressed: " + suppressed.getMessage());
+//            }
+//        } finally {
+//            if (b != null) {
+//                try {
+//                    b.close();
+//                } catch (Exception e) {
+//                    System.out.println("Exception while closing ResourceB: " + e.getMessage());
+//                }
+//            }
+//
+//            if (a != null) {
+//                try {
+//                    a.close();
+//                } catch (Exception e) {
+//                    System.out.println("Exception while closing ResourceA: " + e.getMessage());
+//                }
+//            }
+//        }
+
     }
 }
 
