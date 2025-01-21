@@ -20,10 +20,20 @@ public class CopyOnWriteArrayListExample {
         while (iterator.hasNext()) {
             String item = iterator.next();
             System.out.println(item);
-            iterator.remove(); // This will throw UnsupportedOperationException
-            // Attempt to add an element using the iterator
 
+            // Attempt to remove an element using the iterator
+            try {
+                iterator.remove(); // This will throw UnsupportedOperationException
+            } catch (UnsupportedOperationException e) {
+                System.out.println("Caught exception: " + e);
+            }
+
+            // Attempt to add an element using the iterator
+            try {
                 list.add("D"); // Modifying the list does not affect the iterator
+            } catch (UnsupportedOperationException e) {
+                System.out.println("Caught exception while adding: " + e);
+            }
         }
 
         // ConcurrentModificationException will not occur even with modifications
@@ -32,7 +42,7 @@ public class CopyOnWriteArrayListExample {
 
         Iterator<String> newIterator = list.iterator();
         System.out.println("Iterating after adding new elements:");
-        while (newIterator.hasNext()) {
+        while (iterator.hasNext()) {
             System.out.println(newIterator.next());
         }
     }
