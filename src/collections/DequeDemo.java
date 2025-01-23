@@ -10,7 +10,8 @@ public class DequeDemo {
         deque.offer(1); // offer = offerFirst = push
         deque.offerLast(2);
         deque.offerFirst(3);
-        deque.offerLast(4);
+        deque.offerLast(4); // offerLast = add
+        deque.add(7);
         deque.push(5);
 
         System.out.println(deque);
