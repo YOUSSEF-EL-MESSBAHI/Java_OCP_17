@@ -29,5 +29,5 @@ public class CopyOnWriteArrayListExample1 {
             String item = iterator.next();
             System.out.println(item); // print nothing because iterator has one snapshot
         }
-    }
+    } //
 }
