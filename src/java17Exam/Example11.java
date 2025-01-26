@@ -17,7 +17,11 @@ public class Example11 {
         var y = Period.between(
                 LocalDate.of(2024, 4, 1),
                 LocalDate.of(2024, 5, 1).plusDays(4));
-        System.out.println(x);
+        System.out.println(y);
+
+        var z = LocalDate.of(2024, 4, 1);
+        z.withDayOfMonth(4).plus(Period.ofDays(30));
+        System.out.println(z); // LocalDate is immutable,Thus, x remains 2024-04-01
 
     }
 }
