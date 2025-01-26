@@ -1,4 +1,4 @@
-package java17Exam.sealedClasses;
+package java17Exam;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
