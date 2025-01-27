@@ -1,6 +1,6 @@
 package Enums;
 
-public enum Day /*implements MyInterface*/{
+public enum Day /*implements MyInterface*/ {
 //        int i =0;
     SUNDAY("High"){ public void printTemperature(){ System.out.println(75); }},
     MONDAY ("Moderate"){ @Override public void printTemperature() {System.out.println(65);}},
