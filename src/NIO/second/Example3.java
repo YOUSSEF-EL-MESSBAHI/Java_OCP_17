@@ -19,6 +19,7 @@ public class Example3 {
       System.out.println(res);
     } catch (IOException e) {
       e.printStackTrace();
+      e.getMessage();
     }
   }
 }
