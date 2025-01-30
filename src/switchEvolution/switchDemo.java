@@ -77,23 +77,37 @@ public class switchDemo {
         }
     }
 
+    /**
+     * Demonstrates the use of switch expressions (Java 12) and switch statements
+     * (Java 13) with string values.
+     * @param day the day of the week
+     * @return "Weekday" if the day is Monday to Friday, "Weekend" if the day is Saturday or Sunday
+     */
     public String switchCasejava13(String day){
         return  switch (day) {
             case "Monday":
+                // yield a value
                 yield  "Weekday";
             case "Tuesday":
+                // yield a value
                 yield "Weekday";
             case "Wednesday":
+                // yield a value
                 yield "Weekday";
             case "Thursday":
+                // yield a value
                 yield "Weekday";
             case "Friday":
+                // yield a value
                 yield "Weekday";
             case "Saturday":
+                // yield a value
                 yield "Weekend";
             case "Sunday":
+                // yield a value
                 yield "Weekend";
             default:
+                // yield a value
                 yield "Unknown";
         };
     }
