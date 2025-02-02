@@ -17,6 +17,9 @@ class OClass {
 public class Example12 {
     public static void main(String[] args) {
         OClass.IClass iClass= new OClass().new IClass();
+        System.out.println(iClass.var3);
+        System.out.println(iClass.var4);
+        System.out.println(iClass.m2());
         // iClass can access var3 var4 m2()
     }
 }
