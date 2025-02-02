@@ -9,7 +9,7 @@ public class Example4 {
         }
     }
 
-    public static void myMethod() throws NumberFormatException, ArrayIndexOutOfBoundsException, Exception {
+    public static void myMethod() throws Exception {
         int[] arr = new int[2];
         arr[2] = 10;
     }
