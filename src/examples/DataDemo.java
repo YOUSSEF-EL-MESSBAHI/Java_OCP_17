@@ -1,9 +1,15 @@
 package examples;
 
 public class DataDemo {
+    /**
+     * Demo of data types and operators in Java.
+     *
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         int a = 3, b = 5;
-        boolean p = a < 5 & (b > 3 || a-- > 2); // b>3 true so a-- will not be handled because we are in short circuit
+        boolean p = a < 5 & (b > 3 || a-- > 2);
+        // b>3 true so a-- will not be handled because we are in short circuit
         System.out.println(a);
         boolean q = (a > 2) && (++b > 5);
         boolean r = b == 5 || --a < 3;
